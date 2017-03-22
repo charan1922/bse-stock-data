@@ -2,7 +2,9 @@ var express = require('express');
 var fs = require('fs');
 var recall = require('./subfile.js');
 var day = require('./day1.js');
+var feb3 = require('./feb3.js');
 var app = express();
+var something = require('./app.js')
 //
 // var data = fs.readFileSync('words.json');
 // var words = JSON.parse(data);
@@ -32,11 +34,12 @@ app.listen(3000, function() {
     //
     //
     //
-    // }
+     // }
     //
-day();
-    //recall();
-
+//day();
+//recall();
+            //    feb3();
+               something();
     // function cp(i) {
     //
     //     while (cipl[(i - 1) + "-February-2017"] == undefined) {

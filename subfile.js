@@ -1,4 +1,4 @@
-
+var express = require('express');
 var fs = require('fs');
 var data = fs.readFileSync('words.json');
 var bseData = JSON.parse(data);
@@ -49,6 +49,7 @@ function list(element) {
 
                 function updateRecords(id, prop, value) {
                     more.push({
+
                         [id]: {
                             [prop]: value
                         }
